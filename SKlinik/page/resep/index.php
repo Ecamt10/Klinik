@@ -9,7 +9,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM resep_obat
  INNER JOIN obat ON resep_obat.id_obat = obat.id_obat 
  INNER JOIN berobat ON resep_obat.id_berobat = berobat.id_berobat
  INNER JOIN pasien ON berobat.id_pasien = pasien.id_pasien
- ORDER BY id_resep DESC"); // using mysqli_query instead
+ ORDER BY id_resep ASC"); // using mysqli_query instead
 ?>
 <!DOCTYPE html>
 <html lang="en">
